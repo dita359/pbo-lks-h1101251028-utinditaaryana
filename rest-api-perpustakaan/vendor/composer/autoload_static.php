@@ -7,20 +7,36 @@ namespace Composer\Autoload;
 class ComposerStaticInitea92529950426361b57eb9a326ab5c69
 {
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'A' =>
         array (
             'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'App\\' => 
+        'App\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
+        'App\\Config\\Env' => __DIR__ . '/../..' . '/src/Config/Env.php',
+        'App\\Contracts\\BookRepositoryInterface' => __DIR__ . '/../..' . '/src/Contracts/BookRepositoryInterface.php',
+        'App\\Contracts\\CategoryRepositoryInterface' => __DIR__ . '/../..' . '/src/Contracts/CategoryRepositoryInterface.php',
+        'App\\Controllers\\BookController' => __DIR__ . '/../..' . '/src/Controllers/BookController.php',
+        'App\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/src/Controllers/CategoryController.php',
+        'App\\Core\\Container' => __DIR__ . '/../..' . '/src/Core/Container.php',
+        'App\\Core\\Request' => __DIR__ . '/../..' . '/src/Core/Request.php',
+        'App\\Core\\Response' => __DIR__ . '/../..' . '/src/Core/Response.php',
+        'App\\Core\\Router' => __DIR__ . '/../..' . '/src/Core/Router.php',
+        'App\\Database\\Connection' => __DIR__ . '/../..' . '/src/Database/Connection.php',
+        'App\\Models\\Book' => __DIR__ . '/../..' . '/src/Models/Book.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/src/Models/Category.php',
+        'App\\Repositories\\MySQLBookRepository' => __DIR__ . '/../..' . '/src/Repositories/MySQLBookRepository.php',
+        'App\\Repositories\\MySQLCategoryRepository' => __DIR__ . '/../..' . '/src/Repositories/MySQLCategoryRepository.php',
+        'App\\Services\\BookService' => __DIR__ . '/../..' . '/src/Services/BookService.php',
+        'App\\Services\\CategoryService' => __DIR__ . '/../..' . '/src/Services/CategoryService.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
